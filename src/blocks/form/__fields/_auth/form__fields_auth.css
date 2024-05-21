@@ -1,0 +1,13 @@
+.form__fields_auth p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #222222;
+    margin: 0px;
+}
+
+.form__fields_auth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

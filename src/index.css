@@ -1,3 +1,19 @@
+@import url("./App.css");
+
 @import url("./vendor/normalize.css");
 @import url("./vendor/fonts/fonts.css");
 
+@import url("./blocks/header/header.css");
+
+@import url("./blocks/form/form.css");
+
+@import url("./blocks/form/__navlinks/form__navlinks.css");
+@import url('./blocks/form/__navlinks/_navlink/form__navlinks_navlink.css');
+@import url('./blocks/form/__navlinks/_active/form__navlinks_active.css');
+
+@import url('./blocks/form/__fields/form__fields.css');
+@import url('./blocks/form/__fields/_auth/form__fields_auth.css');
+@import url('./blocks/form/__fields/_auth/_email/form__fields_auth_email.css');
+@import url('./blocks/form/__fields/_auth/_img/form__fields_auth_img.css');
+@import url('./blocks/form/__fields/_send/form__fields_send.css');
+@import url('./blocks/form/__p/form__p.css');

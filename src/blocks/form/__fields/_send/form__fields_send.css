@@ -1,0 +1,13 @@
+.form__fields_send {
+    width: 360px;
+    border-radius: 10px;
+    background-color: #1E22AA;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 19px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -5,6 +5,9 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+	font-style: normal;
 }
 
 main {

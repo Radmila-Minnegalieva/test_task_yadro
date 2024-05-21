@@ -1,23 +1,29 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Form from "./components/Form";
 
+const App = () => {
+  const urls = {
+    Home: {
+      path: "/",
+      element: <Form />,
+    }
+  };
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="page">
+        <div className="background"></div>
+        <Header />
+        <Routes>
+          {Object.entries(urls).map(([key, { path, element }]) => (
+            <Route key={key} path={path} element={element} />
+          ))}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

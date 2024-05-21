@@ -1,0 +1,10 @@
+.form__fields {
+    width: 420px;
+    height: 545px;
+    border-radius: 15px;
+    padding: 40px 60px 40px 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

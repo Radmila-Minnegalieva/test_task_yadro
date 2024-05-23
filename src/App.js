@@ -2,12 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Translation from "./components/Translation";
 
 const App = () => {
   const urls = {
-    Home: {
-      path: "/",
+    Form: {
+      path: "/registration",
       element: <Form />,
+    },
+    Translation : {
+      path: "/",
+      element: <Translation />
     }
   };
 

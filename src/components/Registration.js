@@ -17,7 +17,7 @@ const Registration = () => {
           </form>
         </div>
       </div>
-      <div className="form__fields_auth">
+      <div className="form__fields_auth" id='form__fields_auth_other'>
         <p>Прочие данные</p>
         <div className="form__fields_auth_email">
           <p>Фамилия</p>

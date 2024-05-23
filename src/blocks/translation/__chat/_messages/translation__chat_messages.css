@@ -1,0 +1,22 @@
+.translation__chat_messages {
+    width: 409px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;   
+    overflow-y: auto;
+}
+
+.translation__chat_messages::-webkit-scrollbar {
+    width: 10px;
+}
+   
+.translation__chat_messages::-webkit-scrollbar-track {
+    background-color: #191919;
+}
+   
+.translation__chat_messages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #2F2F2F;
+    width: 10px;
+}

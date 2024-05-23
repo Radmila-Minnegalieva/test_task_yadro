@@ -4,6 +4,7 @@
 @import url("./vendor/fonts/fonts.css");
 
 @import url("./blocks/header/header.css");
+@import url("./blocks/header/__registration/header__registration.css");
 
 @import url("./blocks/form/form.css");
 
@@ -17,3 +18,18 @@
 @import url('./blocks/form/__fields/_auth/_img/form__fields_auth_img.css');
 @import url('./blocks/form/__fields/_send/form__fields_send.css');
 @import url('./blocks/form/__p/form__p.css');
+
+@import url('./blocks/translation/translation.css');
+
+@import url('./blocks/translation/__player/translation__player.css');
+
+@import url('./blocks/translation/__chat/translation__chat.css');
+@import url('./blocks/translation/__chat/_navlinks/translation__chat_navlinks.css');
+@import url('./blocks/translation/__chat/_navlinks/_chat/translation__chat_navlinks_chat.css');
+@import url('./blocks/translation/__chat/_navlink/translation__chat_navlink.css');
+@import url('./blocks/translation/__chat/_messages/translation__chat_messages.css');
+@import url('./blocks/translation/__chat/_messages/_message/translation__chat_messages_message.css');
+@import url('./blocks/translation/__chat/_messages/_message/_text/translation__chat_messages_message_text.css');
+@import url('./blocks/translation/__chat/_messages/_message/_likes/translation__chat_messages_message_likes.css');
+@import url('./blocks/translation/__chat/_messages/_message/_likes/_text/translation__chat_messages_message_likes_text.css');
+@import url('./blocks/translation/__chat/_button/translation__chat_button.css');

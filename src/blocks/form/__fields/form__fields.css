@@ -8,3 +8,7 @@
     flex-direction: column;
     gap: 30px;
 }
+
+#form__fields_authcode {
+    height: 149px;
+}

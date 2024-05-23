@@ -1,0 +1,23 @@
+.translation__chat_messages_message_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 230px;
+}
+
+.translation__chat_messages_message_text p {
+    margin: 0;
+}
+
+#translation__chat_messages_message_text1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #999999;
+    
+}
+
+#translation__chat_messages_message_text2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #cccccc;
+}

@@ -1,0 +1,27 @@
+.translation__chat_messages_message_likes {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.translation__chat_messages_message_likes img {
+    width: 16px;
+    height: 16px;
+}
+
+.translation__chat_messages_message_likes p {
+    margin: 0;
+}
+
+@media (min-height: 72px) and (max-height: 93px) {
+    .translation__chat_messages_message_likes img {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-height: 94px) {
+    .translation__chat_messages_message_likes img {
+        margin-bottom: 1px;
+    }
+}

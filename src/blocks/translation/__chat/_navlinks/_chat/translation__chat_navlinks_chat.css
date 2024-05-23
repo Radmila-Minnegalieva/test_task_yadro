@@ -1,0 +1,6 @@
+.translation__chat_navlinks_chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+}

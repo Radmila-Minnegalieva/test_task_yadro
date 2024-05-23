@@ -1,0 +1,11 @@
+.header__registration {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__registration p {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+}

@@ -1,0 +1,5 @@
+.translation__chat_navlinks {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 5px;
+}

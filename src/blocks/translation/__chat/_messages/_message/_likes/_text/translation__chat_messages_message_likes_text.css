@@ -1,0 +1,15 @@
+.translation__chat_messages_message_likes_text {
+    width: 30px;
+    margin-left: 0;
+}
+
+.translation__chat_messages_message_likes_text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.liked-text p{
+    color: #FFFFFF;
+}
+

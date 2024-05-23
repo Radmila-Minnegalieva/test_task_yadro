@@ -11,3 +11,7 @@
     align-items: center;
     justify-content: center;
 }
+
+#form__fields_send_authcode {
+    margin-top: -10px;
+}

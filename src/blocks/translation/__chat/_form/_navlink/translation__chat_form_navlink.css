@@ -1,0 +1,15 @@
+.translation__chat_form_navlink {
+    width: 409px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 19px 30px 20px 30px;
+    background-color: #1E22AA;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}

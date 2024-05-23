@@ -1,0 +1,9 @@
+.translation__chat_form_text_name {
+    display: flex;
+    gap: 10px;
+}
+
+.translation__chat_form_text_name p {
+    color: #999999;
+    text-decoration: none;
+}

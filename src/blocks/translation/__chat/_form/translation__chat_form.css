@@ -1,0 +1,7 @@
+.translation__chat_form {
+    width: 409px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}

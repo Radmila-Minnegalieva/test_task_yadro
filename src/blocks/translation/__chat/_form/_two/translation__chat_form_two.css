@@ -1,0 +1,33 @@
+.translation__chat_form_two {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.translation__chat_form_two form {
+  display: flex;
+  justify-content: space-between;
+  width: 369px;
+  height: 80px;
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #cccccc;
+}
+
+.translation__chat_form_two textarea {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+}
+
+.translation__chat_form_two textarea:focus {
+  outline: none;
+}
+
+.translation__chat_form_two img {
+  margin-top: 20px;
+}

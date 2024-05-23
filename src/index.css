@@ -17,6 +17,7 @@
 @import url('./blocks/form/__fields/_auth/_email/form__fields_auth_email.css');
 @import url('./blocks/form/__fields/_auth/_img/form__fields_auth_img.css');
 @import url('./blocks/form/__fields/_send/form__fields_send.css');
+
 @import url('./blocks/form/__p/form__p.css');
 
 @import url('./blocks/translation/translation.css');
@@ -33,3 +34,8 @@
 @import url('./blocks/translation/__chat/_messages/_message/_likes/translation__chat_messages_message_likes.css');
 @import url('./blocks/translation/__chat/_messages/_message/_likes/_text/translation__chat_messages_message_likes_text.css');
 @import url('./blocks/translation/__chat/_button/translation__chat_button.css');
+@import url('./blocks/translation/__chat/_form/translation__chat_form.css');
+@import url('./blocks/translation/__chat/_form/_two/translation__chat_form_two.css');
+@import url('./blocks/translation/__chat/_form/_navlink/translation__chat_form_navlink.css');
+@import url('./blocks/translation/__chat/_form/_text/translation__chat_form_text.css');
+@import url('./blocks/translation/__chat/_form/_text/_name/translation__chat_form_text_name.css');

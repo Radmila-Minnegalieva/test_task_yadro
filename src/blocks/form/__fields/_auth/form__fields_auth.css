@@ -4,6 +4,7 @@
     line-height: 22px;
     color: #222222;
     margin: 0px;
+    margin-top:-4px;
 }
 
 .form__fields_auth {

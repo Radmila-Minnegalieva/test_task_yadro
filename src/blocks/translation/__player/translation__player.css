@@ -1,5 +1,5 @@
 .translation__player {
     width: 1050px;
     height: 590px;
-    border: 1px solid red;
+    background: url('../../../images/player.svg');
 }

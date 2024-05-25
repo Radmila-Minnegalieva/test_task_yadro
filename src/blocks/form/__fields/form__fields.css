@@ -1,7 +1,8 @@
 .form__fields {
-    width: 420px;
+    width: 540px;
     height: 545px;
     border-radius: 15px;
+    box-sizing: border-box;
     padding: 40px 60px 40px 60px;
     background-color: #FFFFFF;
     display: flex;

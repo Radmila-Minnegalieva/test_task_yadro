@@ -1,10 +1,9 @@
 .translation__chat {
     width: 408px;
-    height: 530px;
-    padding: 31px 30px 31px 30px;
-    gap: 15px;
+    height: 533px;
+    padding: 26px 30px 31px 30px;
     background-color: #141414;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
 }

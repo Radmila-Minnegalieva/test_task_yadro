@@ -17,28 +17,33 @@ const Registration = () => {
           </form>
         </div>
       </div>
-      <div className="form__fields_auth" id='form__fields_auth_other'>
+      <div className="form__fields_auth" id="form__fields_auth_other">
         <p>Прочие данные</p>
-        <div className="form__fields_auth_email">
+        <div className="form__fields_auth_email" id="form__fields_auth_other_email">
           <p>Фамилия</p>
           <form>
-            <input type="email" placeholder="Ваша фамилия" required></input>
+            <input type="text" placeholder="Ваша фамилия" required></input>
             <div className="form__fields_auth_img">
               <img src={necessary} alt="necessary"></img>
             </div>
           </form>
         </div>
-        <div className="form__fields_auth_email">
+        <div className="form__fields_auth_email" id="form__fields_auth_other_name">
           <p>Имя</p>
           <form>
-            <input type="email" placeholder="Ваше имя" required></input>
+            <input type="text" placeholder="Ваше имя" required></input>
             <div className="form__fields_auth_img">
               <img src={necessary} alt="necessary"></img>
             </div>
           </form>
         </div>
       </div>
-      <NavLink className="form__fields_send">Отправить</NavLink>
+      <NavLink
+        to="/user"
+        className="form__fields_send"
+      >
+        Отправить
+      </NavLink>
       <p className="form__p">* поле, обязательное для заполнения</p>
     </div>
   );

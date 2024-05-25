@@ -69,6 +69,7 @@ const initialMessages = [
 const Chat = () => {
   const [messages, setMessages] = useState(initialMessages);
   const [showForm, setShowForm] = useState(false);
+  const [newMessageText, setNewMessageText] = useState("");
 
   const handleLikeClick = (id) => {
     setMessages((prevMessages) =>
@@ -85,89 +86,103 @@ const Chat = () => {
   };
 
   const handleButtonClick = () => {
-    setShowForm(true); 
+    setShowForm(true);
+  };
+
+  const handleFormChange = (e) => {
+    setNewMessageText(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (newMessageText.trim()) {
+      const newMessage = {
+        id: messages.length + 1,
+        author: "Нина", 
+        text: newMessageText,
+        likes: 0,
+        liked: false,
+      };
+      setMessages([...messages, newMessage]);
+      setNewMessageText("");
+      setShowForm(false);
+    }
   };
 
   return (
-      <div className="translation__chat">
-        <div className="translation__chat_navlinks">
-          <div className="translation__chat_navlinks_chat">
-            <NavLink
-              className="translation__chat_navlink"
-              id="translation__chat_navlink1"
-            >
-              Чат
-            </NavLink>
-            <img src={active_svg} alt="active"></img>
-          </div>
-          <NavLink className="translation__chat_navlink">
-            Вопрос / ответ
+    <div className="translation__chat">
+      <div className="translation__chat_navlinks">
+        <div className="translation__chat_navlinks_chat">
+          <NavLink className="translation__chat_navlink" id="translation__chat_navlink1">
+            Чат
           </NavLink>
+          <img src={active_svg} alt="active" />
         </div>
-        <div className="translation__chat_messages">
-          {messages.map((message) => (
-            <div
-              key={message.id}
-              className="translation__chat_messages_message"
-            >
-              <div className="translation__chat_messages_message_text">
-                <p id={`translation__chat_messages_message_text1`}>
-                  {message.author}
-                </p>
-                <p id={`translation__chat_messages_message_text2`}>
-                  {message.text}
-                </p>
-              </div>
-              <div className="translation__chat_messages_message_likes">
-                <img
-                  src={message.liked ? filllike : like}
-                  alt="like"
-                  onClick={() => handleLikeClick(message.id)}
-                  style={{ cursor: "pointer" }}
-                />
-                <div
-                  className={`translation__chat_messages_message_likes_text ${
-                    message.liked ? "liked-text" : ""
-                  }`}
-                >
-                  <p>{message.likes}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        {showForm && (
-          <div className="translation__chat_form">
-            <div className="translation__chat_form_two">
-              <form>
-              <textarea placeholder="Текст" required></textarea>
-                <div className="translation__chat_form_img">
-                  <img src={smile} alt="smile"></img>
-                </div>
-              </form>
-              <NavLink className="translation__chat_form_navlink">
-                Отправить
-              </NavLink>
-            </div>
-            <div className="translation__chat_form_text">
-              <div className="translation__chat_form_text_name">
-                <p>Имя в чате:</p>
-                <p>Нина</p>
-              </div>
-              <p>Ред.</p>
-            </div>
-          </div>
-        )}
-        {!showForm && (
-          <NavLink
-            className="translation__chat_button"
-            onClick={handleButtonClick}
-          >
-            <p>Хотите отправить сообщение?</p>
-            <p>Кликните на эту кнопку</p>
-          </NavLink>
-        )}
+        <NavLink className="translation__chat_navlink">Вопрос / ответ</NavLink>
       </div>
+      <div className="translation__chat_messages">
+        {messages.map((message) => (
+          <div key={message.id} className="translation__chat_messages_message">
+            <div className="translation__chat_messages_message_text">
+              <p id={`translation__chat_messages_message_text1`}>{message.author}</p>
+              <p id={`translation__chat_messages_message_text2`}>{message.text}</p>
+            </div>
+            <div className="translation__chat_messages_message_likes">
+              <img
+                src={message.liked ? filllike : like}
+                alt="like"
+                onClick={() => handleLikeClick(message.id)}
+                style={{ cursor: "pointer" }}
+              />
+              <div
+                className={`translation__chat_messages_message_likes_text ${
+                  message.liked ? "liked-text" : ""
+                }`}
+              >
+                <p>{message.likes}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {showForm && (
+        <div className="translation__chat_form">
+          <div className="translation__chat_form_two">
+            <form onSubmit={handleFormSubmit}>
+              <textarea
+                placeholder="Текст"
+                required
+                value={newMessageText}
+                onChange={handleFormChange}
+              ></textarea>
+              <div className="translation__chat_form_img">
+                <img src={smile} alt="smile" />
+              </div>
+              <button type="submit" style={{ display: "none" }} />
+            </form>
+            <NavLink
+              className="translation__chat_form_navlink"
+              onClick={handleFormSubmit}
+            >
+              Отправить
+            </NavLink>
+          </div>
+          <div className="translation__chat_form_text">
+            <div className="translation__chat_form_text_name">
+              <p>Имя в чате:</p>
+              <p>Нина</p>
+            </div>
+            <p>Ред.</p>
+          </div>
+        </div>
+      )}
+      {!showForm && (
+        <NavLink className="translation__chat_button" onClick={handleButtonClick}>
+          <p>Хотите отправить сообщение?</p>
+          <p>Кликните на эту кнопку</p>
+        </NavLink>
+      )}
+    </div>
   );
 };
 

@@ -13,6 +13,10 @@ const App = () => {
     Translation : {
       path: "/",
       element: <Translation />
+    },
+    TranslationAuth : {
+      path: "/user",
+      element: <Translation />
     }
   };
 

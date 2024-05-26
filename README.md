@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
+Демонстрацию работы веб-приложения можно увидеть [здесь](https://youtu.be/UUM9pPCh3zM).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+"/" - главный экран неавторизованного пользователя
+
+"/registration" - окно регистрации и входа, переход на ссылку возможен также по клику на иконку пользователя в хэдере 
+
+"/user" - главный экран авторизованного пользователя
 
 ## Available Scripts
 

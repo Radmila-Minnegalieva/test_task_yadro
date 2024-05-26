@@ -1,21 +1,26 @@
 .translation__chat_button {
-    width: 350px;
-    height: 35px;
-    border-radius: 10px;
-    padding: 18px 30px 19px 30px;
-    display: flex;
-    flex-direction: column;
-    background-color: #1E22AA;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    gap: 6px;
-    margin-top: -5px;
+  width: 350px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 18px 30px 19px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e22aa;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 6px;
+  margin-top: -5px;
+  transition: background-color 0.3s ease;
 }
 
 .translation__chat_button p {
-    margin: 0;
-    color: #FFFFFF;
-    size: 16px;
-    font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+  size: 16px;
+  font-weight: 600;
+}
+
+.translation__chat_button:hover {
+  background-color: #090c7c;
 }

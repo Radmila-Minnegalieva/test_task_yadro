@@ -1,15 +1,18 @@
 .form__fields {
-    width: 540px;
-    height: 545px;
-    border-radius: 15px;
-    box-sizing: border-box;
-    padding: 40px 60px 40px 60px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  width: 540px;
+  height: 545px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 40px 60px 40px 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #form__fields_authcode {
-    height: 149px;
+  height: 228px;
+  width: 520px;
+  margin-left: 6px;
+  margin-top: -1px;
 }

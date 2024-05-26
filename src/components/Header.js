@@ -10,17 +10,18 @@ const Header = () => {
   return (
     <div className="header">
       <NavLink to="/">
-        <img src={logo} alt="logo" className='header__logo'></img>
+        <img src={logo} alt="logo" className="header__logo"></img>
       </NavLink>
-      {location.pathname !== "/registration" && location.pathname !== "/user" && (
-        <div className="header__registration">
-          <p>Регистрация</p>
-          <NavLink to="/registration">
-            <img src={registration} alt="registration"></img>
-          </NavLink>
-        </div>
-      )}
-      {location.pathname !== "/registration" && location.pathname !== "/" &&(
+      {location.pathname !== "/registration" &&
+        location.pathname !== "/user" && (
+          <div className="header__registration">
+            <p>Регистрация</p>
+            <NavLink to="/registration">
+              <img src={registration} alt="registration"></img>
+            </NavLink>
+          </div>
+        )}
+      {location.pathname !== "/registration" && location.pathname !== "/" && (
         <div className="header__registration">
           <p>Имя пользователя</p>
           <NavLink to="/registration">

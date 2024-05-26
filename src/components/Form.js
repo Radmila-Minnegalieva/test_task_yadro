@@ -10,18 +10,26 @@ const Form = () => {
   return (
     <div className="form">
       <div className="form__navlinks">
-        <div className={`form__navlinks_active ${activeForm === "registration" ? "active" : ""}`}>
-          <NavLink 
-            className="form__navlinks_navlink" 
+        <div
+          className={`form__navlinks_active ${
+            activeForm === "registration" ? "active" : ""
+          }`}
+        >
+          <NavLink
+            className="form__navlinks_navlink"
             onClick={() => setActiveForm("registration")}
           >
             Регистрация
           </NavLink>
           {activeForm === "registration" && <img src={active} alt="active" />}
         </div>
-        <div className={`form__navlinks_active ${activeForm === "authcode" ? "active" : ""}`}>
-          <NavLink 
-            className="form__navlinks_navlink" 
+        <div
+          className={`form__navlinks_active ${
+            activeForm === "authcode" ? "active" : ""
+          }`}
+        >
+          <NavLink
+            className="form__navlinks_navlink"
             onClick={() => setActiveForm("authcode")}
           >
             Код доступа

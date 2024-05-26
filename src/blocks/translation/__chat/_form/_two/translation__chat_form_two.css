@@ -22,10 +22,15 @@
   outline: none;
   resize: none;
   font-size: 16px;
+  color: #222222;
 }
 
 .translation__chat_form_two textarea:focus {
   outline: none;
+}
+
+.translation__chat_form_two textarea::placeholder {
+  color: #CCCCCC;
 }
 
 .translation__chat_form_two img {

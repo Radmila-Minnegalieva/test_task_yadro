@@ -172,7 +172,7 @@ const Chat = () => {
               <p>Имя в чате:</p>
               <p>Нина</p>
             </div>
-            <p>Ред.</p>
+            <p id='translation__chat_form_text_name_change'>Ред.</p>
           </div>
         </div>
       )}

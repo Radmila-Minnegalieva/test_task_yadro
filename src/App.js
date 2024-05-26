@@ -10,14 +10,14 @@ const App = () => {
       path: "/registration",
       element: <Form />,
     },
-    Translation : {
+    Translation: {
       path: "/",
-      element: <Translation />
+      element: <Translation />,
     },
-    TranslationAuth : {
+    TranslationAuth: {
       path: "/user",
-      element: <Translation />
-    }
+      element: <Translation />,
+    },
   };
 
   return (

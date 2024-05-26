@@ -7,3 +7,7 @@
     color: #999999;
     text-decoration: none;
 }
+
+#translation__chat_form_text_name_change:hover {
+    color: #FFFFFF;
+}

@@ -1,44 +1,56 @@
 .form__fields_auth_email {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+form.invalid {
+  border: 1px solid #E93D5C !important;
 }
 
 .form__fields_auth_email p {
-    font-size: 14px;
-    margin: 0;
+  font-size: 14px;
+  margin: 0;
 }
 
 .form__fields_auth_email form {
-    display: flex;
-    justify-content: space-between;
-    background-color: #F4F6FB;
-    border-radius: 10px;
-    padding: 15px 10px 14px 20px;
-    margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f6fb;
+  border-radius: 10px;
+  padding: 15px 10px 14px 20px;
+  margin: 0px;
 }
 
 .form__fields_auth_email form:focus-within {
-    background-color: #E7EBF5;
-  }
+  background-color: #e7ebf5;
+}
 
 .form__fields_auth_email input {
-    width: 374px;
-    background-color: #F4F6FB;
-    border: none;
-    margin: 0px;
-    
+  width: 374px;
+  background-color: #f4f6fb;
+  border: none;
+  margin: 0px;
+  color: #222222;
 }
 
 .form__fields_auth_email input:focus {
-    background-color: #E7EBF5;
-    outline: none;
+  background-color: #e7ebf5;
+  outline: none;
+}
+
+.form__fields_auth_email input::placeholder {
+  color: #d3d4ed;
 }
 
 #form__fields_auth_other_name {
-    margin-top: -7px;
+  margin-top: -7px;
 }
 
 #form__fields_auth_other_email {
-    margin-top: -2px;
+  margin-top: -2px;
+}
+
+#form__fields_auth_email_p {
+  margin-top: 2px;
 }
